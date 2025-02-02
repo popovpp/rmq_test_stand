@@ -1,0 +1,19 @@
+FROM python:3.13-slim
+ENV PYTHONUNBUFFERED 1
+RUN mkdir /code
+WORKDIR /code/
+COPY ./ /code/
+
+ENV PYTHONDONTWRITEBYTECODE=1
+
+RUN apt-get update && apt-get install bash
+
+RUN pip3 install -r requirements.txt
+
+ENV PYTHONPATH "${PYTHONPATH}:/code"
+
+EXPOSE 8501
+
+HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health
+
+ENTRYPOINT ["streamlit", "run", "front_app.py", "--server.port=8501", "--server.address=0.0.0.0"]

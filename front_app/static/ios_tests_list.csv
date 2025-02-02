@@ -1,0 +1,46 @@
+simReader, simReader, CMD_TEST_START
+eSim, eSim, CMD_TEST_START
+Network, Network, CMD_TEST_START
+Barometer, Barometer, CMD_TEST_START
+Bluetooth, Bluetooth, CMD_TEST_START
+WiFi, WiFi, CMD_TEST_START
+Geolocation, Geolocation, CMD_TEST_START
+Accelerometer, Accelerometer, CMD_TEST_START
+Gyroscope, Gyroscope, CMD_TEST_START
+Compass, Compass, CMD_TEST_START
+FrontCamera, FrontCamera, CMD_TEST_START
+BackCamera, BackCamera, CMD_TEST_START
+UltraWideCamera, UltraWideCamera, CMD_TEST_START
+TelephotoCamera, TelephotoCamera, CMD_TEST_START
+TrueDepthCamera, TrueDepthCamera, CMD_TEST_START
+FrontMic, FrontMic, CMD_TEST_START, CMD_TEST_STOP
+VideoMic, VideoMic, CMD_TEST_START, CMD_TEST_STOP
+BottomMic, BottomMic, CMD_TEST_START, CMD_TEST_STOP
+LoudSpeaker, LoudSpeaker, CMD_TEST_START, CMD_TEST_STOP
+Speaker, Speaker, CMD_TEST_START, CMD_TEST_STOP
+LoudSpeakerQuality, LoudSpeakerQuality, CMD_TEST_START, CMD_TEST_STOP
+SpeakerQuality, SpeakerQuality, CMD_TEST_START, CMD_TEST_STOP
+Vibro, Vibro, CMD_TEST_START, CMD_TEST_STOP
+Proximity, Proximity, CMD_TEST_START, CMD_TEST_STOP
+White, White, CMD_TEST_START, CMD_TEST_STOP
+Blue, Blue, CMD_TEST_START, CMD_TEST_STOP
+Black, Black, CMD_TEST_START, CMD_TEST_STOP
+Red, Red, CMD_TEST_START, CMD_TEST_STOP
+Green, Green, CMD_TEST_START, CMD_TEST_STOP
+Truetone, Truetone, CMD_TEST_START, CMD_TEST_STOP
+display_off, display_off, CMD_TEST_START, CMD_TEST_STOP
+MultiTouch, MultiTouch, CMD_TEST_START, CMD_TEST_GET_STATE, CMD_TEST_STOP
+3dTouch, 3dTouch, CMD_TEST_START
+Brightness, Brightness, CMD_TEST_START, CMD_TEST_STOP
+points_calibration, points_calibration, CMD_TEST_START, CMD_TEST_STOP
+Flash, Flash, CMD_TEST_START, CMD_TEST_STOP
+Light, Light, CMD_TEST_START, CMD_TEST_STOP
+ApplePay, ApplePay, CMD_TEST_START
+FaceId, FaceId, CMD_TEST_START
+Lidar, Lidar, CMD_TEST_START
+Buttons, Buttons, CMD_TEST_START, CMD_TEST_STOP
+VolumeUp, VolumeUp, CMD_TEST_START
+VolumeDown, VolumeDown, CMD_TEST_START
+RingSilentButton, RingSilentButton, CMD_TEST_START
+PowerButton, PowerButton, CMD_TEST_START
+HomeButton, HomeButton, CMD_TEST_START

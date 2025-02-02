@@ -1,0 +1,50 @@
+version: "3.8"
+services:
+  redis_serv:
+    image: redis:alpine
+    network_mode: "host"
+    restart: unless-stopped
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+     - "6379:6379"
+    logging:
+      driver: "json-file"
+      options:
+        tag: "{{.ImageName}}|{{.Name}}|{{.ImageFullID}}|{{.FullID}}"
+    # container_name: redis_serv
+  rmq_teststand:
+    build:
+      context: ./back_app
+    # env_file:
+    #  - main_process/.env
+    network_mode: "host"
+    restart: always
+    command: bash -c 'uvicorn back_app.main:app --host 0.0.0.0 --port 8001 --workers 1'
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./:/code
+    ports:
+      - "8001:8001"
+    depends_on:
+      - redis_serv
+  front_app:
+    build:
+      context: ./front_app
+    # env_file:
+    #  - main_process/.env
+    network_mode: "host"
+    restart: always
+    # command: bash -c 'streamlit run /code/front_app/front_app.py --server.port=8501 --server.address=0.0.0.0'
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - ./front_app:/code
+      - ./back_app:/code/back_app
+      - ./temp:/code/temp
+    ports:
+      - "8501:8501"
+    depends_on:
+      - redis_serv
+      - rmq_teststand
+volumes:
+  rmq_teststand_data:

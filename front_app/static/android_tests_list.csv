@@ -1,0 +1,28 @@
+PhoneInfo, PhoneInfo, CMD_TEST_START
+Light, Light, CMD_TEST_START, CMD_TEST_STOP
+FrontCamera, FrontCamera, CMD_TEST_START
+BackCamera, BackCamera, CMD_TEST_START
+USBConnect, USBConnect, CMD_TEST_START
+TouchScreen, TouchScreen, CMD_TEST_START, CMD_TEST_GET_STATE, CMD_TEST_STOP
+WiFi, WiFi, CMD_TEST_START
+Network, Network, CMD_TEST_START
+Bluetooth, Bluetooth, CMD_TEST_START
+Accelerometer, Accelerometer, CMD_TEST_START
+Compass, Compass, CMD_TEST_START
+Gyroscope, Gyroscope, CMD_TEST_START
+Geolocation, Geolocation, CMD_TEST_START
+SpeakerQuality, SpeakerQuality, CMD_TEST_START, CMD_TEST_STOP
+Speaker, Speaker, CMD_TEST_START, CMD_TEST_STOP
+LoudSpeakerQuality, LoudSpeakerQuality, CMD_TEST_START, CMD_TEST_STOP
+LoudSpeaker, LoudSpeaker, CMD_TEST_START, CMD_TEST_STOP
+Blue, Blue, CMD_TEST_START, CMD_TEST_STOP
+Red, Red, CMD_TEST_START, CMD_TEST_STOP
+Green, Green, CMD_TEST_START, CMD_TEST_STOP
+White, White, CMD_TEST_START, CMD_TEST_STOP
+display_off, display_off, CMD_TEST_START, CMD_TEST_STOP
+Vibro, Vibro, CMD_TEST_START, CMD_TEST_STOP
+points_calibration, points_calibration, CMD_TEST_START, CMD_TEST_STOP
+Brightness, Brightness, CMD_TEST_START, CMD_TEST_STOP
+VideoMic, VideoMic, CMD_TEST_START, CMD_TEST_STOP
+PhoneMic, PhoneMic, CMD_TEST_START, CMD_TEST_STOP
+GetLog, GetLog, CMD_TEST_START

@@ -1,0 +1,9 @@
+[redis]
+host=localhost
+password=password
+port=6379
+db=0
+
+[base]
+path_absolute=/home/user/dev/agb-mcm/
+current_path=./
